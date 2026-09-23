@@ -1,0 +1,22 @@
+# Local dependencies and configuration
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+
+# Private original database and documents
+/LabFinal/Dump20240717/
+/Relatório Final - Laboratório de Projeto.pdf
+/LOCAL_SETUP_GUIDE*
+
+# Editor scratch files, logs and private backups
+**/tempCodeRunnerFile.js
+*.log
+/private-backups/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Personal portraits and office images omitted from the public portfolio
+/LabFinal/LabB2B_Team-master/views/assets/photos/
