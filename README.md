@@ -6,12 +6,19 @@ This repository preserves the original academic project for **portfolio and loca
 
 ## Features
 
-- Company registration, login, profiles, and supplier pages
-- Product catalogue with categories, images, stock, and minimum-order quantities
-- Supplier inventory management and promotional product displays
-- Company-to-company messaging and wishlists
-- Shopping cart, shipping options, and order history
-- **Stripe Checkout in test mode**
+- **Company accounts and supplier profiles.** Businesses can register, sign in, and maintain a company profile with contact information, a description, and an image. Each account can act as both a buyer and a supplier, with a public company page showcasing its products.
+
+- **Product catalogue and discovery.** Products are organised into departments and subdepartments, with search, filtering, and price-ordering controls to help users browse the catalogue. Product pages bring together descriptions, image galleries, supplier links, stock information, and minimum-order quantities.
+
+- **Supplier catalogue and promotional displays.** Suppliers can add product listings with pricing, stock, minimum-order quantities, and multiple images through their dashboard. They can also configure promotional prices, which appear on product listings and detail pages.
+
+- **Business-to-business communication.** Companies can send messages to other businesses and reply through the dashboard. Separate inbox and sent-message views keep conversations accessible alongside the company's other marketplace activity.
+
+- **Saved products.** Signed-in companies can add products to a wishlist and access them from the dashboard's Liked Products section. Each saved entry links back to the product page for further browsing or purchasing.
+
+- **Wholesale cart and delivery selection.** The shopping cart supports ordering in multiples of each product's minimum-order quantity. Buyers can select a destination, delivery speed, address, and delivery date, with national or international shipping calculated from the sellers' countries and the destination. Cart totals and test payments use the base catalogue prices.
+
+- **Stripe test checkout and order history.** The application creates a hosted Stripe Checkout session for sandbox payments. After a successful test payment and return to the application, the purchase is recorded with its products, quantities, delivery details, and total; buyers can view their orders and suppliers can view the corresponding sales in their dashboards.
 
 ## Tech stack
 
@@ -62,11 +69,15 @@ node app.js
 
 Open **http://localhost:3000** on the same machine. Use fictional information and Stripe test cards only; do not use this prototype for real payments.
 
-## Known limitations
+## Documentation
 
-This is the preserved **2024 academic prototype**, not a production-ready marketplace. Some features are incomplete: promotional prices are displayed but **the cart and checkout charge the original product price**; product editing and some wishlist actions are incomplete. Payment verification, access controls, and dependencies would need further work before any real-world deployment.
+The [original user manual](Manual%20de%20Utlizador%20-%20B2B.pdf) provides a walkthrough of the academic project's interface. For the configuration used by this repository, follow the setup instructions above.
 
-The [original user manual](Manual%20de%20Utlizador%20-%20B2B.pdf) provides a more detailed walkthrough of the project interface.
+## Educational use and image disclaimer
+
+This application and its demonstration content were assembled for a university final project and are shared for educational, portfolio, and local demonstration purposes only. They are not intended for real-world commercial operation or real transactions.
+
+The visual assets include AI-generated company branding and third-party product photographs and other imagery used to illustrate the demonstration catalogue and interface. Third-party images, brand names, and trademarks remain the property of their respective owners; their inclusion does not imply affiliation, endorsement, or a grant of permission to reuse them. This notice explains the project's context and does not replace any permission or licence required from the relevant rights holders.
 
 ## Project credits
 
